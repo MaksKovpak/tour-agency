@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитувальник</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <a href="../index.html"><img src="../images/logo.png" alt="Логотип турфірми" width="200"></a>
+            <input id="menu-toggle" type="checkbox">
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn" href="tours.html">Більше турів</a>
+        
+                        <div class="dropdown-content">
+                            <a href="">Європа</a>
+                            <a href="">Азія</a>
+                            <a href="">Африка</a>
+                            <a href="">Північна Америка</a>
+                            <a href="">Південна Америка</a>
+                            <a href="">Австралія</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="current-page" href="form.html">Опитувальник</a></li>
+                <li><a href="about-us.html">Про нас</a></li>
+                <li><a href="news.html">Новини</a></li>
+            </ul>
+            <div class="nav-elements">
+                <!-- <form>
+                    <input type="search" placeholder="Знайди свою подорож">
+                    <button type="submit"></button>
+                </form> -->
+                <img class="icons" src="../images/support-icon.svg" alt="Підтримка">
+                <a class="support" href="tel:+380961234567">24 / 7 підтримка<br>+38 096 1234 567</a>
+                <a href="registration.html" id="open-profile"><img class="icons big-icon" src="../images/user-icon.svg" alt="Реєстрація"></a>
+                <a href="shopping-bag.html">
+                    <img class="icons big-icon bag-ico" src="../images/shopping-bag.svg" alt="Кошик">
+                    <button class="counter">2</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="form-block">
+        <h1>Опитувальник</h1>
+        <h2>Пройдіть опитування і допожіть нам стати кращими! Це займе всього кілька хвилин</h2>
+        <form>
+            <h3>Контактна та особиста інформація (обов'язково)</h3>
+            <div class="contact-info">
+                <label>Ім'я<span>*</span><br><input type="text" required></label>
+                <label>Прізвище<span>*</span><br><input type="text" required></label>
+                <label>Дата народження<span>*</span><br><input type="date" required></label>
+                <label>Електронна пошта<span>*</span><br><input type="email" placeholder="example@gmail.com" required></label>
+                <label>Номер телефону<span>*</span><br><input type="tel" placeholder="+380" required></label>
+                <div>
+                    <p>Стать</p>
+                    <label><input type="radio" name="question0">Чоловік</label>
+                    <label><input type="radio" name="question0">Жінка</label>
+                </div>
+            </div>
+
+            <div>
+                <h3>Чи подорожуєте ви наодинці?</h3>
+                
+                <label><input type="radio" name="question1">Так</label><br>
+                <label><input type="radio" name="question1">Ні</label>
+            </div>
+
+            <div>
+                <h3>Звідки ви про нас дізналися?</h3>
+   
+                <label><input type="checkbox"><span></span>Реклама</label><br>
+                <label><input type="checkbox">Соцмережі</label><br>
+                <label><input type="checkbox">Друзі, колеги тощо</label><br>
+                <label><input type="checkbox">Інше (вказати в коментарі)</label>
+            </div>
+
+            <div>
+                <h3>Якому виду транспорту ви віддаєте перевагу?</h3>
+
+                <label><input type="radio" name="question2">Автомобільний</label><br>
+                <label><input type="radio" name="question2">Авіаційний</label><br>
+                <label><input type="radio" name="question2">Власний транспорт</label><br>
+                <label><input type="radio" name="question2">Морський / річковий</label><br>
+                <label><input type="radio" name="question2">Залізничний</label><br>
+                <label><input type="radio" name="question2">Інший (вказати в коментарі)</label>
+            </div>
+
+            <div>
+                <h3>Чи користувалися ви нашими послугами?</h3>
+
+                <label><input type="radio" name="question3">Так</label><br>
+                <label><input type="radio" name="question3">Ні</label>
+            </div>
+
+            <div>
+                <h3>Вкажіть з ким ви іще подорожуєте</h3>
+
+                <label><input type="checkbox">З сім'єю</label><br>
+                <label><input type="checkbox">З друзями</label><br>
+                <label><input type="checkbox">З колегами по роботі</label><br>
+                <label><input type="checkbox">Інше (вказати в коментарі)</label>
+            </div>
+
+            <div>
+                <h3>Останнє місце вашого відпочинку</h3>
+                <label><input type="text" placeholder="Країна, місто, курорт..."></label>
+            </div>
+
+            <div>
+                <h3>На яку пору року плануєте відпочинок?</h3>
+                <select name="season">
+                    <option value="Літо">Літо</option>
+                    <option value="Осінь">Осінь</option>
+                    <option value="Зима">Зима</option>
+                    <option value="Весна">Весна</option>
+                </select>
+            </div>
+
+            <div>
+                <h3>Які з нижчезазначених заходів ви відвідуєте під час подорожі?</h3>
+              
+                    <select name="activities">
+                        <option value="Професійна діяльність">Професійна діяльність</option>
+                        <option value="Відвідування батьків">Відвідування батьків</option>
+                        <option value="Походи до магазинів">Походи до магазинів</option>
+                        <option value="Участь у культурних заходах">Участь у культурних заходах</option>
+                        <option value="Вечері у ресторанах">Вечері у ресторанах</option>
+                        <option value="Участь у виставках / фестивалях">Участь у виставках / фестивалях</option>
+                        <option value="Участь у нічному житті">Участь у нічному житті</option>
+                        <option value="Участь у спортивних заходах">Участь у спортивних заходах</option>
+                        <option value="Паломництво">Паломництво</option>
+                        <option value="Оглядові прогулянки пішки">Оглядові прогулянки пішки</option>
+                        <option value="Відпочинок на пляжі">Відпочинок на пляжі</option>
+                        <option value="Відвідування музеїв">Відвідування музеїв</option>
+                        <option value="Відвідування античних пам’яток">Відвідування античних пам’яток</option>
+                        <option value="Рибальство / мисливство">Рибальство / мисливство</option>
+                        <option value="Відвідування церков / костелів">Відвідування церков / костелів</option>
+                        <option value="Піші та велопоходи">Піші та велопоходи</option>
+                        <option value="Відвідування маленьких містечок / сіл">Відвідування маленьких містечок / сіл</option>
+                        <option value="Спортивні ігри">Спортивні ігри</option>
+                        <option value="Відвідування парків розваг">Відвідування парків розваг</option>
+                        <option value="Поїздки верхи">Поїздки верхи</option>
+                        <option value="Відвідування зоопарку">Відвідування зоопарку</option>
+                        <option value="Лижі">Лижі</option>
+                        <option value="Відвідування визначних місць">Відвідування визначних місць</option>
+                        <option value="Відвідування національного парку">Відвідування національного парку</option>
+                        <option value="Відвідування ринку">Відвідування ринку</option>
+                        <option value="Інша діяльність">Інша діяльність</option>
+                    </select>
+            </div>
+
+            <div>
+                <h3>Середня сума, яку ви витрачаєте на подорожі (в грн.)</h3>
+                <input type="number" min="0">
+            </div>
+
+            <div>
+                <h3>Чи користуєтеся ви послугами гідів та екскурсоводів?</h3>
+
+                <label><input type="radio" name="question4">Так</label><br>
+                <label><input type="radio" name="question4">Ні</label>
+            </div>
+
+            <div>
+                <h3>Бажаєте отримувати інформацію про гарячі путівки?</h3>
+                
+                <label><input type="radio" name="question5">Так</label><br>
+                <label><input type="radio" name="question5">Ні</label>
+            </div>
+
+            <div class="textarea">
+                <h3>Коментар</h3>
+
+                <label>Додайте свої зауваження або якісь побажання, а також помістіть додаткову інформацію про те, що стосується інших питань анкети<br>
+                    <textarea rows="7" cols="30" placeholder=""></textarea>
+                </label>
+            </div>
+            
+            <div class="btns">
+                <button type="reset">Стерти</button>
+                <button type="submit">Завершити опитування</button>
+            </div>
+        </form>
+    </section>
+
+    <div class="up-btn">
+        <div></div>
+    </div>
+
+    <footer>
+        <div class="footer-item">
+            <div class="item">
+                <h4>Про нас</h4>
+                <p>Про подорожі разом</p>
+                <p>Зв'яжися з нами</p>
+                <p>Особливості</p>
+            </div>
+    
+            <div class="item">
+                <h4>Ресурси</h4>
+                <p>Центр допомоги</p>
+                <p>Блог</p>
+                <p>Партнерство</p>
+            </div>
+    
+            <div class="item">
+                <h4>Зв'язатися</h4>
+                <p>Запитання чи відгук?</p>
+                <p>Ми будемо раді почути від вас</p>
+                <img class="icons" src="../images/instagram-icon.svg">
+                <img class="icons" src="../images/facebook-icon.svg">
+                <img class="icons" src="../images/twitter-icon.svg">
+            </div>
+        </div>
+    
+        <img src="../images/payment.png" alt="Способи оплати" width="300">
+    
+        <p>© Туристична фірма "Екватор", 2022. Всі права застережені</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

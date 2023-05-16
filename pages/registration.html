@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитувальник</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <section class="reg">
+        <div class="box">
+            <img src="../images/registration-bg.jpg">
+        </div>
+        <div class="content">
+            <div class="form-block reg-form" style="height: 100vh;">
+                <h1>Вітаємо</h1>
+                <h2>Зареєструйтеся, щоб продовжити роботу</h2>
+
+                <form class="r-form" autocomplete="off">
+                    <label for="user-name">Ім'я та прізвище<span>*</span></label>
+                    <input id="user-name" name="username" type="text" required>
+
+                    <label for="user-email">Електронна пошта<span>*</span></label>
+                    <input id="user-email" name="email" type="email" placeholder="example@gmail.com" required>
+
+                    <label for="user-birthday">Дата народження<span>*</span></label>
+                    <input id="user-birthday" name="birthday" type="date" required>
+                    
+                    <label for="user-password">Пароль<span>*</span></label>
+                    <div class="pass-block">
+                        <input id="user-password" name="password" type="password" minlength="8" required>
+                        <input type="checkbox" id="hide-password">
+                    </div>
+               
+                    <label for="password-repeat">Повторіть пароль<span>*</span></label>
+                    <input id="password-repeat" type="password" minlength="8" required>
+                    
+                    <ul class="password-requirements">
+                        <li>Великі та малі літери</li>
+                        <li>Цифри</li>
+                        <li>Мінімум 8 символів</li>
+                    </ul>
+
+                    <!-- <label><input class="checkbox" type="checkbox">Запам'ятати мене</label> -->
+                    <button id="register-button" type="submit">Зареєструватися</button>
+                    <!-- <p><span>Або авторизуйтеся</span></p> -->
+                    <a id="go-to-login" href="../pages/authorization.html">Увійти</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="loading"></div>
+
+    <script type="module" src="../js/export/Alert.js"></script>
+    <script type="module" src="../js/export/UserControll.js"></script>
+    <script type="module" src="../js/registration.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новини</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav">
+            <a href="../index.html"><img src="../images/logo.png" alt="Логотип турфірми" width="200"></a>
+            <input id="menu-toggle" type="checkbox">
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn" href="tours.html">Більше турів</a>
+
+                        <div class="dropdown-content">
+                            <a href="">Європа</a>
+                            <a href="">Азія</a>
+                            <a href="">Африка</a>
+                            <a href="">Північна Америка</a>
+                            <a href="">Південна Америка</a>
+                            <a href="">Австралія</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="form.html">Опитувальник</a></li>
+                <li><a href="about-us.html">Про нас</a></li>
+                <li><a href="news.html">Новини</a></li>
+            </ul>
+            <div class="nav-elements">
+                <!-- <form>
+                    <input type="search" placeholder="Знайди свою подорож">
+                    <button type="submit"></button>
+                </form> -->
+                <img class="icons" src="../images/support-icon.svg" alt="Підтримка">
+                <a class="support" href="tel:+380961234567">24 / 7 підтримка<br>+38 096 1234 567</a>
+                <a href="registration.html" id="open-profile"><img class="icons big-icon" src="../images/user-icon.svg" alt="Реєстрація"></a>
+                <a href="shopping-bag.html">
+                    <img class="icons big-icon bag-ico" src="../images/shopping-bag.svg" alt="Кошик">
+                    <button class="counter">2</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="user-profile">
+        <div id="user-photo">
+            <img src="../images/profile-icon.jpg" class="profile-photo">
+            <input type="file" id="open-image">
+        </div>
+
+        <form class="base-info" autocomplete="off"></form>
+    </section>
+
+    <div class="centered-block">
+        <button id="change-btn">Змінити</button>
+        <button id="exit-btn">Вихід</button>
+    </div>
+
+    <div class="up-btn">
+        <div></div>
+    </div>
+
+    <div class="loading"></div>
+
+    <footer>
+        <div class="footer-item">
+            <div class="item">
+                <h4>Про нас</h4>
+                <p>Про подорожі разом</p>
+                <p>Зв'яжися з нами</p>
+                <p>Особливості</p>
+            </div>
+
+            <div class="item">
+                <h4>Ресурси</h4>
+                <p>Центр допомоги</p>
+                <p>Блог</p>
+                <p>Партнерство</p>
+            </div>
+
+            <div class="item">
+                <h4>Зв'язатися</h4>
+                <p>Запитання чи відгук?</p>
+                <p>Ми будемо раді почути від вас</p>
+                <img class="icons" src="../images/instagram-icon.svg">
+                <img class="icons" src="../images/facebook-icon.svg">
+                <img class="icons" src="../images/twitter-icon.svg">
+            </div>
+        </div>
+
+        <img src="../images/payment.png" alt="Способи оплати" width="300">
+
+        <p>© Туристична фірма "Екватор", 2022. Всі права застережені</p>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+    <script type="module" src="../js/export/Alert.js"></script>
+    <script type="module" src="../js/export/UserControll.js"></script>
+    <script type="module" src="../js/user-cabinet.js" async></script>
+</body>
+
+</html>

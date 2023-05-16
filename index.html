@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристична фірма Екватор</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav">   
+            <a href="index.html"><img src="images/logo.png" alt="Логотип турфірми" width="200"></a>
+            <input id="menu-toggle" type="checkbox">
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn" href="pages/tours.html">Більше турів</a>
+                    
+                        <div class="dropdown-content">
+                            <a href="">Європа</a>
+                            <a href="">Азія</a>
+                            <a href="">Африка</a>
+                            <a href="">Північна Америка</a>
+                            <a href="">Південна Америка</a>
+                            <a href="">Австралія</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="pages/form.html">Опитувальник</a></li>
+                <li><a href="pages/about-us.html">Про нас</a></li>
+                <li><a href="pages/news.html">Новини</a></li>
+            </ul>
+            
+            <div class="nav-elements">
+                <!-- <form> -->
+                    <!-- <input type="search" placeholder="Знайди свою подорож"> -->
+                    <!-- <button type="submit"></button> -->
+                <!-- </form> -->
+                <img class="icons" src="images/support-icon.svg" alt="Підтримка">
+                <a class="support" href="tel:+380961234567">24 / 7 підтримка<br>+38 096 1234 567</a>
+                <a href="pages/registration.html" id="open-profile">
+                    <img class="icons big-icon" src="images/user-icon.svg" alt="Реєстрація">
+                </a>
+                <a href="pages/shopping-bag.html">
+                    <img class="icons big-icon bag-ico" src="images/shopping-bag.svg" alt="Кошик">
+                    <button class="counter">2</button>
+                </a>         
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-text">
+                <h1>Туристична фірма "Екватор"</h1>
+                <h2>Купуйте квитки на гарячі курорти за накращими цінами!</h2>
+                <button type="button">Купити квитки</button>
+                
+                <div class="centered-block">
+                    <div class="search">
+                        <input type="text" placeholder="Куди хочете поїхати?">
+                        <input type="text" placeholder="Виберіть тур">
+                        <input type="date">
+                        <button>Пошук</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-title">
+            <span class="h2">Ми рекомендуємо</span>
+            <p><a>Дізнатися більше</a></p>
+        </div>
+        <section class="cards">
+            <h2 hidden aria-hidden="true">Тури</h2>
+            <div class="card">
+                <figure>
+                    <img src="images/scandinavia.jpg" alt="Скандинавія" width="300">
+                    <figcaption>Від 19 000₴</figcaption>
+                </figure>
+
+                <div class="description">
+                    <h3>Скандинавія</h3>
+                    <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9733; 5.0</p>
+                    <div class="tour-info">
+                        <img class="icons" src="images/calendar-alt.svg" alt="Календар">
+                        <a>12 днів</a>
+                        <img class="icons" src="images/map-pin.svg" alt="Карта">
+                        <a>9 місць</a>
+                        <img class="icons" src="images/globe.svg" alt="Глобус">
+                        <a>3 країни</a>
+                    </div>
+                    <p>Від розкішного Копенгагена до витонченого Стокгольма! Ми даруємо вам 12 днів чистої скандинавської магії</p>
+                    <details>
+                        <summary>Детальніше</summary>
+                        Велична північна природа, тревел, звивисті фіорди, середньовічні міста і замки - ось що Ви побачите, подорожуючи по
+                        Скандинавії, батьківщині вікінгів. Тури по Норвегії, Фінляндії, Данії, Швеції принесуть Вам масу приємних сюрпризів
+                        і не залишать байдужим.
+                    </details>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <img src="images/barselona.jpg" alt="Барселона" width="300" id="div">
+                    <figcaption>Від 22 560₴</figcaption>
+                </figure>
+
+                <div class="description">
+                    <h3>Барселона</h3>
+                    <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9733; 5.0</p>
+                    <div class="tour-info">
+                        <img class="icons" src="images/calendar-alt.svg" alt="Календар">
+                        <a>11 днів</a>
+                        <img class="icons" src="images/map-pin.svg" alt="Карта">
+                        <a>9 місць</a>
+                        <img class="icons" src="images/globe.svg" alt="Глобус">
+                        <a>1 країна</a>
+                    </div>
+                    <p>Той тур, який дарує вам найкраще з іспанської культури, від пляжів до палаців і місцевої кухні</p>
+                    <details>
+                        <summary>Детальніше</summary>
+                        Барселону часто називають містом-музеєм Середземномор'я. Тут фантастичним чином поєднались спокійна та розмірена
+                        атмосфера з живим та бурхливим ритмом життя. В цьому казковому місті знайшли своє натхнення легендарний Пікассо та
+                        Жуан
+                        Міро. Барселона — це активний ритм життя, шумні вечірки, безкінечна сангрія, казкові пам’ятки в кожному закутку
+                        міста, вуличні
+                        музиканти та затишні кав’ярні.
+                    </details>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <img src="images/yellowstone.jpg" alt="Єллоустоун" width="300">
+                    <figcaption>Від 9 950₴</figcaption>
+                </figure>
+
+                <div class="description">
+                    <h3>Єллоустоун і Ґранд-Тітонс</h3>
+                    <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9733; 5.0</p>
+                    <div class="tour-info">
+                        <img class="icons" src="images/calendar-alt.svg" alt="Календар">
+                        <a>11 днів</a>
+                        <img class="icons" src="images/map-pin.svg" alt="Карта">
+                        <a>9 місць</a>
+                        <img class="icons" src="images/globe.svg" alt="Глобус">
+                        <a>1 країна</a>
+                    </div>
+                    <p>Від вершин Ґранд-Тітонс до Єллоустоуну, на 2 дні пригод у найстарішому національному парку світу</p>
+                    <details>
+                        <summary>Детальніше</summary>
+                        Єллоустоун це неймовірно красивий американський національний парк, розташований значною мірою у штаті Вайомінг та
+                        простягається у
+                        Монтану та Айдахо. Парк розташований на вершині вулканічної гарячої точки. Національний парк є ідеальним місцем для
+                        вас,
+                        якщо ви любитель природи,
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <h2>Популярні напрямки</h2>
+        <section class="cards">
+            <div class="card">
+                <figure>
+                    <img src="images/europe.jpg" alt="Європейський вир" width="300">
+                    <figcaption>Від 23 000₴</figcaption>
+                </figure>
+                <div class="description">
+                    <h3>Європейський вир</h3>
+                    <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9733; 5.0</p>
+                    <div class="tour-info">
+                        <img class="icons" src="images/calendar-alt.svg" alt="Календар">
+                        <a>18 днів</a>
+                        <img class="icons" src="images/map-pin.svg" alt="Карта">
+                        <a>32 місця</a>
+                        <img class="icons" src="images/globe.svg" alt="Глобус">
+                        <a>10 країн</a>
+                    </div>
+                    <p>Мрієте про свою європейську пригоду, але не знаєте, з чого почати? Ласкаво просимо до Європейського виру</p>
+                    <details>
+                        <summary>Детальніше</summary>
+                        Європа - прекрасна! І не тільки ефектним поєднанням неповторних золотисто - багряних пейзажів та історичних пам'яток
+                        на їхньому
+                        фоні. Найпопулярніші європейські міста ніби завмирають і стають на короткий час самими собою.
+                    </details>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <img src="images/under-water.jpg" alt="Грецькі острови" width="300">
+                    <figcaption>Від 19 000₴</figcaption>
+                </figure>
+
+                <div class="description">
+                    <h3>Грецькі острови</h3>
+                    <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9733; 5.0</p>
+                    <div class="tour-info">
+                        <img class="icons" src="images/calendar-alt.svg" alt="Календар">
+                        <a>11 днів</a>
+                        <img class="icons" src="images/map-pin.svg" alt="Карта">
+                        <a>5 місць</a>
+                        <img class="icons" src="images/globe.svg" alt="Глобус">
+                        <a>1 країна</a>
+                    </div>
+                    <p>Ви проживете своє найкраще життя на грецькому острові під час цієї багатої сонцем, морем і культурою
+                        подорожі на Міконос, Парос, Санторіні, Іос і Афіни. Зупинка на кожному з найпопулярніших островів Греції</p>
+                    <details>
+                        <summary>Детальніше</summary>
+                        Греція - це країна з білим піском і блакитними водами морів, витонченими винами, античною архітектурою і
+                        багатовіковою
+                        історією, яка подарувала світові знаменитих філософів і вчених. Країна православна, тому путівка до Греції відкриває
+                        віруючим парам можливості провести незабутнє весілля.
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <button class="more-info-btn">Усі пропозиції</button>
+        </div>
+
+        <h2>Компанія "Екватор" це...</h2>
+        <section class="flip-cards-block">
+            <div class="flip-card">
+                <div class="card-content">
+                    <div class="flip-card-front">
+                        <img class="icons" src="images/big-globe.svg" alt="Глобус">
+                        <h4>Різноманітні напрямки</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="card-content">
+                    <img class="icons" src="images/big-coin.svg" alt="Монета">
+                    <h4>Співвідношення ціна / якість</h4>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="card-content">
+                    <img class="icons" src="images/big-map-pin.svg" alt="Позначка на карті">
+                    <h4>Красиві місця</h4>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="card-content">
+                    <img class="icons" src="images/big-calendar-check.svg" alt="Календар">
+                    <h4>Швидке бронювання</h4>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="card-content">
+                    <img class="icons" src="images/big-heart.svg" alt="Серце">
+                    <h4>Пристрасні подорожі</h4>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="card-content">
+                    <img class="icons" src="images/big-users.svg" alt="Користувачі">
+                    <h4>Команда підтримки</h4>
+                </div>
+            </div>
+        </section>
+
+        <h2>Що кажуть наші клієнти</h2>
+        <section class="clients">
+            <div class="rectangle"></div>
+            <div class="feedbacks-block">
+                <div class="feedback">
+                    <img src="images/person1.jpg" alt="Фото першої клієнтки" width="50">
+                    <address>Марія К.</address>
+                    <blockquote>
+                        Відповідальна туристична фірма. Дають відповіді на всі питання та оперативно шукають тури в режимі онлайн.
+                        Рекомендую!
+                    </blockquote>
+                </div>
+            
+                <div class="feedback">
+                    <img src="images/person2.jpg" alt="Фото другого клієнта" width="50">
+                    <address>Арсен Свиридов</address>
+                    <blockquote>
+                        Дуже задоволений поїздкою в Грецію, дякую за організацію і терпеливі відповіді на всі запитання
+                    </blockquote>
+                </div>
+            
+                <div class="feedback">
+                    <img src="images/person3.jpg" alt="Фото третього клієнта" width="50">
+                    <address>Юрій Процюк</address>
+                    <blockquote>
+                        Дякую турфірмі “Екватор” та менеджерці Ірині за гарну організацію відпочинку
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <button class="more-info-btn">Більше відгуків</button>
+        </div>
+
+        <h2>Куди ви можете подорожувати</h2>
+        <section class="directions">
+            <div class="directions-card">
+                <div class="directions-card-inner">
+                    <div class="directions-card-front">
+                        <figure>
+                            <img src="images/usa.jpg" alt="США" width="500">
+                            <figcaption>США</figcaption>
+                        </figure>
+                    </div>
+                    <div class="directions-card-back">
+                        <h1>Чому варто відвідати?</h1>
+                        <p>Америка надає великі можливості для любителів екстремального туризму: рафтінг, каякінг, альпінізм, спелеологія, кінний та
+                        велосипедний туризм і, звичайно, усі зимові види спорту. Далеко не кожна країна зважиться змагатися з таким багатством
+                        пропозицій. Можливості туризму в Америці набагато ширше, ніж це прийнято вважати. Знайомтеся!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="directions-card">
+                <div class="directions-card-inner">
+                    <div class="directions-card-front">
+                        <figure>
+                            <img src="images/canada.jpg" alt="Канада" width="500">
+                            <figcaption>Канада</figcaption>
+                        </figure>
+                    </div>
+                    <div class="directions-card-back">
+                        <h1>Чому варто відвідати?</h1>
+                        <p>Ніагарський водоспад – візитна картка країни - знаходиться на кордоні США та Канади, між штатом Нью-Йорк і провінцією
+                        Онтаріо. Це комплекс з трьох водоспадів, "Підкова", "Американський водоспад" і водоспад "Фата" приваблюють туристів.
+                        Щорічно ці місця відвідує більше 30 млн. туристів.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="directions-card">
+                <div class="directions-card-inner">
+                    <div class="directions-card-front">
+                        <figure>
+                            <img src="images/europe4.jpg" alt="Європа" width="500">
+                            <figcaption>Європа</figcaption>
+                        </figure>
+                    </div>
+                    <div class="directions-card-back">
+                        <h1>Чому варто відвідати?</h1>
+                        <p>Європа славиться своїми стародавніми містами, а також локаціями. Тут зібралась багатотисячна історія, неперевершена
+                        архітектура і історія, доторкнутись до якої повинен кожен турист. Деякі місця Європи можна сміливо назвати унікальними –
+                        аналогів їм немає. Саме тому європейські міста настільки популярні серед подорожуючих із цілого світу.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="directions-card">
+                <div class="directions-card-inner">
+                    <div class="directions-card-front">
+                        <figure>
+                            <img src="images/asia.jpg" alt="Азія" width="500">
+                            <figcaption>Азія</figcaption>
+                        </figure>
+                    </div>
+                    <div class="directions-card-back">
+                        <h1>Чому варто відвідати?</h1>
+                        <p>Азія – найбільша частина світу, саме тут з'явились всі найдавніші цивілізації та світові релігії. Хоча б раз у житті
+                        варто відвідати ці дивовижні місця. Під час такої подорожі, ви зможете ближче познайомитись з цікавими традиціями,
+                        архітектурними пам'ятками та історією</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="directions-card">
+                <div class="directions-card-inner">
+                    <div class="directions-card-front">
+                        <figure>
+                            <img src="images/latin-america.jpg" alt="Латинська Америка" width="500">
+                            <figcaption>Латинська Америка</figcaption>
+                        </figure>
+                    </div>
+                    <div class="directions-card-back">
+                        <h1>Чому варто відвідати?</h1>
+                        <p>Значна частина країн Латинської Америки не має найкращої репутації найкращого місця подорожі. Однак значна частина такої
+                        стигми незаслужена, особливо в таких напрямках, які не тільки вважаються безпечними для відвідування, але пропонують
+                        вражаючі краєвиди та часто і більш доступні витрати</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="directions-card">
+                <div class="directions-card-inner">
+                    <div class="directions-card-front">
+                        <figure>
+                            <img src="images/australia.jpg" alt="Австралія" width="500">
+                            <figcaption>Австралія</figcaption>
+                        </figure>
+                    </div>
+                    <div class="directions-card-back">
+                        <h1>Чому варто відвідати?</h1>
+                        <p>Немає сумнівів – Австралія одна з найвіддаленіших, фешенебельних і високорозвинених країн світу. Вона обдарована
+                        численними чудесами, чарівною природою, сліпучими пляжами, багатонаціональним мегаполісом і просторими глубинками, які
+                        досконалі для подорожей</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="directions-card">
+                <div class="directions-card-inner">
+                    <div class="directions-card-front">
+                        <figure>
+                            <img src="images/africa.jpg" alt="Африка" width="500">
+                            <figcaption>Африка</figcaption>
+                        </figure>
+                    </div>
+                    <div class="directions-card-back">
+                        <h1>Чому варто відвідати?</h1>
+                        <p>Країни Африки досить популярні серед туристів. Це й не дивно, бо піщані пляжі Єгипту, Тунісу і Марокко славляться по
+                        всьому світу. Але говорячи про відпочинок на цьому дивовижному континенті, не варто забувати про острови: Канари,
+                        Мадагаскар, Маврикій і Сейшели - ці курорти є заповітною мрією любителів теплих країн</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="directions-card">
+                <figure class="more-info">
+                    <div>
+                        <figcaption><a>Дізнатися більше</a></figcaption>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <div class="up-btn">
+            <div></div>
+        </div>
+
+
+        <div class="modal" id="subscribe-window">
+            <div class="modal-content" style="flex-direction: row;">
+                <span class="close">&times;</span>
+                <img src="images/eiffel-tower.jpg" alt="Ейфелева вежа">
+                <div id="about-subscription">
+                    <h2>Хочеш щодня досліджувати щось нове та цікаве?</h2>
+                    <p>Підпишись на нашу розсилку, щоб завжди бути в курсі останніх новин туризму!</p>
+                    <input type="email">
+                    <button id="subscribe">Підписатися</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="ad"></div>
+    </main>
+
+    <div class="opaque-loading" style="display: block;"></div>
+
+    <footer>
+        <div class="footer-item">
+            <div class="item">
+                <h4>Про нас</h4>
+                <p>Про подорожі разом</p>
+                <p>Зв'яжися з нами</p>
+                <p>Особливості</p>
+            </div>
+    
+            <div class="item">
+                <h4>Ресурси</h4>
+                <p>Центр допомоги</p>
+                <p>Блог</p>
+                <p>Партнерство</p>
+            </div>
+            
+            <div class="item">
+                <h4>Зв'язатися</h4>
+                <p>Запитання чи відгук?</p>
+                <p>Ми будемо раді почути від вас</p>
+                <img class="icons" src="images/instagram-icon.svg">
+                <img class="icons" src="images/facebook-icon.svg">
+                <img class="icons" src="images/twitter-icon.svg">
+            </div>
+        </div>
+
+        <img src="images/payment.png" alt="Способи оплати" width="300">
+
+        <p>© Туристична фірма "Екватор", 2022. Всі права застережені</p>
+    </footer>
+
+    <script src="js/main.js" async></script>
+    <script src="js/index.js" async></script>
+</body>
+
+</html>
